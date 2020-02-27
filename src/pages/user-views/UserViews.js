@@ -117,7 +117,7 @@ export default class UserViews extends React.Component {
                 method: 'POST',
                 body: JSON.stringify({dayBegin,dayEnd, userChannels}),
             });
-
+            
             statistic = Object.values(statistic[0]);
 
             await this.setState({

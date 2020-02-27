@@ -41,7 +41,7 @@ export default class ChannelsLink extends React.Component {
     }
 
     async getChannelsList() {
-        const channels = await  fetch('https://pl.iptv2021.com/api/v1/channels?access_token=r0ynhfybabufythekbn').then(response => {
+        const channels = await  fetch('https://vls.iptv2022.com/api/v1/channels?access_token=r0ynhfybabufythekbn').then(response => {
             return response.json();
         });
         let data = [];
