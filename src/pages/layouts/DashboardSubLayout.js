@@ -21,7 +21,7 @@ const DashboardSubLayout = ({ match }) => {
         <Switch>
             <Route
                 exact path={`${match.url}/`}
-                component={ Dashboard }
+                component={ UserChannels }
             />
 
             <Route
