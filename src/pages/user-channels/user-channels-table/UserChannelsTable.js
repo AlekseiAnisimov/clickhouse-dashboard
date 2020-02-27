@@ -26,8 +26,8 @@ const UserChannelsTable = ({data, isDataLoading}) => {
             <table className="table table-sm teble-striped mb-0">
                 <thead className="bg-light">
                     <tr>
-                        <th scope="col" className="border-0">Телеканал</th>
-                        <th scope="col" className="border-0">Уникальные пользователи</th>
+                        <th scope="col" className="border-0">Tv channel</th>
+                        <th scope="col" className="border-0">Unique users</th>
                     </tr>
                 </thead>
                 <tbody>

@@ -24,7 +24,7 @@ export default (props) => {
     return (
         <Placeholder {...props}>
             <LoaderSvg {...props} />
-            <div style={{paddingTop: '1rem'}}>Идет загрузка данных</div>
+            <div style={{paddingTop: '1rem'}}>Loading data</div>
         </Placeholder>
     );
 };

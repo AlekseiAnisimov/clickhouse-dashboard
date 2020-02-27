@@ -18,7 +18,7 @@ const CustomDatePicker = ({ label, minDate, maxDate, changeDatePicker, value, is
             <label htmlFor="feInputState">{ label }</label>
             <DatePicker
                 className={ classes.join(' ') }
-                placeholderText='Выбрать период'
+                placeholderText='Choose period'
                 dateFormat = 'dd-MM-yyyy'
                 selected={ value !== null ? new Date(value * 1000): null }
                 onChange={ (date)=>changeDatePicker(Date.parse(date) / 1000, name) }

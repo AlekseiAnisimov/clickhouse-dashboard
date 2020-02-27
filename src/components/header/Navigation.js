@@ -97,7 +97,7 @@ const Navigation = () => {
             isVisible: Identity.can(''),
         },
         {
-            title: 'Пользователи',
+            title: 'Users',
             url: '/dashboard/registration-requests',
             icon: 'extension',
             sort: 6,
@@ -110,29 +110,19 @@ const Navigation = () => {
             sort: 7,
             childs: [
                 {
-                    title: 'Уникальные пользователи',
+                    title: 'Unique users',
                     url: '/user-channels',
                     sort: 1
                 },
                 {
-                    title: 'Просмотров онлайн/архив',
+                    title: 'Online and archive views',
                     url: '/user-views',
                     sort: 2
                 },
                 {
-                    title: 'Переходы по каналам онлайн',
+                    title: 'Transitions on TV channels',
                     url: '/channels-start-online-archive',
                     sort: 3,
-                },
-                {
-                    title: "Показ рекламы на каналах",
-                    url: '/channels-ads',
-                    sort: 4,
-                },
-                {
-                    title: "Детализация по типам устройствам",
-                    url: '/channels-by-gadget',
-                    sort: 5,
                 },
             ]
         }

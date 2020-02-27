@@ -5,7 +5,7 @@ const EmptyContent = () => {
     return (
         <div className="non-content">
             <div className="non-content-cover"></div>
-            Данных пока нет
+            No data yet
         </div>
     );
 };

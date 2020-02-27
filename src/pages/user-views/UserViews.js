@@ -8,7 +8,7 @@ export default class UserViews extends React.Component {
     state = {
         fields: {
             datePicker1: {
-                label: "Начало периода",
+                label: "Beginning of period",
                 value: null,
                 isValid: false,
                 isTouch: false,
@@ -16,7 +16,7 @@ export default class UserViews extends React.Component {
                 maxDate: null
             },
             datePicker2: {
-                label: "Конец периода",
+                label: "End of period",
                 value: null,
                 isValid: false,
                 isTouch: false,
@@ -132,8 +132,8 @@ export default class UserViews extends React.Component {
             <>
                 <div className="page-header row no-gutters py-4">
                     <div className="col-12 col-sm-4 text-center text-sm-left mb-4 mb-sm-0">
-                        <span className="text-uppercase page-subtitle">Обзор</span>
-                        <h3 className="page-title">Статистика просмотра онлайн/архив</h3>
+                        <span className="text-uppercase page-subtitle">Overview</span>
+                        <h3 className="page-title">View Statistics(online/archive)</h3>
                     </div>
                 </div>
                 <div className="row">
@@ -143,7 +143,7 @@ export default class UserViews extends React.Component {
                                 <CustomDatePicker changeDatePicker={ this.onChangeDatePickerHandler } name={ 'datePicker1' } { ...this.state.fields.datePicker1 }/>
                                 <CustomDatePicker changeDatePicker={ this.onChangeDatePickerHandler } name={ 'datePicker2' } { ...this.state.fields.datePicker2 }/>
                             </div>
-                            <button type="submit" className="mb-2 btn btn-sm btn-success mr-1">Применить</button>
+                            <button type="submit" className="mb-2 btn btn-sm btn-success mr-1">Apply</button>
                         </form>
                     </div>
                 </div>
