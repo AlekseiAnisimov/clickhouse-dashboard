@@ -66,10 +66,10 @@ export default class CreateUserForm extends Component {
                 <div className="col-md-12">
                     <div>
                         <div className="form-group">
-                            <label htmlFor="username">Логин</label>
+                            <label htmlFor="username">Login</label>
                             <input type="text" className="form-control form-control-sm" 
                                 id="username" 
-                                placeholder="Введите логин" 
+                                placeholder="Input login" 
                                 onChange={this.handleChange}
                                 name="username"
                                 required
@@ -80,33 +80,33 @@ export default class CreateUserForm extends Component {
                             <input type="email" className="form-control form-control-sm"
                                 id="email" 
                                 aria-describedby="emailHelp" 
-                                placeholder="Введите email"
+                                placeholder="Input email"
                                 onChange={this.handleChange}
                                 name="email"
                                 required
                             />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="password">Пароль</label>
+                            <label htmlFor="password">Password</label>
                             <input type="text" className="form-control form-control-sm"
                                 id="password"
-                                placeholder="Введите пароль"
+                                placeholder="Input password"
                                 onChange={this.handleChange}
                                 name="password"
                                 required
                             />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="description">Описание</label>
+                            <label htmlFor="description">Description</label>
                             <textarea className="form-control form-control-sm"
                                 rows="3"
                                 id="description"
-                                placeholder="Введите описание, наименование партнера"
+                                placeholder="Enter description, name of partner"
                                 onChange={this.handleChange}
                                 name="description"
                             />
                         </div>
-                        <button className="btn btn-primary mb-2" onClick={ () => {this.save()}}>Сохранить</button>
+                        <button className="btn btn-primary mb-2" onClick={ () => {this.save()}}>Save</button>
                     </div>
                 </div>
             </div>

@@ -10,11 +10,10 @@ const Brand = (props) => {
             <div className="d-table m-auto">
 
                 <img id="main-logo" className="d-inline-block align-top mr-1 ml-3"
-                     style={{maxWidth: "35px"}} src={require("./../../assets/images/logo.png")}
-                     alt="React Dashboard"
+                     style={{maxWidth: "35px"}}
                 />
 
-                <span className="d-none d-md-inline ml-1">LimeHD Analitycs</span>
+                <span className="d-none d-md-inline ml-1">Analitycs</span>
             </div>
         </a>
     );

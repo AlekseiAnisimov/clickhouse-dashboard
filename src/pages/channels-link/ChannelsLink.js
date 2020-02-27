@@ -127,7 +127,7 @@ export default class ChannelsLink extends React.Component {
                     </div>
                     <div className="page-header row no-gutters py-4">
                         <div className="col-12 col-sm-4 text-center text-sm-left mb-4 mb-sm-0">
-                            <h3 className="page-title">Телеканалы</h3>
+                            <h3 className="page-title">TV channels</h3>
                         </div>
                     </div>
                     <Row>

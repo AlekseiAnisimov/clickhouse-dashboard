@@ -105,10 +105,10 @@ export default class RegistrationRequests extends Component {
 
     isConfirmedUserStyle(unixtime) {
         if (!unixtime) {
-            return "неактивый";
+            return "inactive";
         }
 
-        return "активный";
+        return "active";
     }
 
     showCreateUserForm() {
@@ -143,14 +143,14 @@ export default class RegistrationRequests extends Component {
             <>
                 <div className="page-header row no-gutters py-4">
                     <div className="col-12 col-sm-4 text-center text-sm-left mb-4 mb-sm-0">
-                        <h3 className="page-title">Пользователи</h3>
+                        <h3 className="page-title">Users</h3>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col-md-12">
                         <div>
                             <button className="btn btn-primary btn-sm" onClick={ () => this.showCreateUserForm()}>
-                                Добавить
+                                Add
                             </button>
                         </div>
                         <div>
@@ -171,12 +171,12 @@ export default class RegistrationRequests extends Component {
                         <table className="table table-stripped table-sm mb-0">
                             <thead className="bg-light">
                                 <tr>
-                                    <th scope="col" className="border-0">Логин</th>
+                                    <th scope="col" className="border-0">Login</th>
                                     <th scope="col" className="border-0">Email</th>
-                                    <th scope="col" className="border-0">Дата создания</th>
-                                    <th scope="col" className="border-0">Описание</th>
-                                    <th scope="col" className="border-0">Статус</th>
-                                    <th scope="col" className="border-0">Управление</th>
+                                    <th scope="col" className="border-0">Create date</th>
+                                    <th scope="col" className="border-0">Description</th>
+                                    <th scope="col" className="border-0">Status</th>
+                                    <th scope="col" className="border-0">Control</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -189,9 +189,9 @@ export default class RegistrationRequests extends Component {
                                         <td>{this.isConfirmedUserStyle(user.confirmed_at)}</td>
                                         <td>
                                             <div className="btn-group btn-group-sm btn-group-toggle d-inline-flex mb-4 mb-sm-0 mx-auto">
-                                                <button className="btn btn-link" onClick={ () => this.confirmUser(user.id, index) } title="Активировать"><i className="material-icons">check</i></button>
-                                                <button className="btn btn-link" onClick={ () => this.unconfirmUser(user.id, index) } title="Отключить"><i className="material-icons">power_settings_new</i></button>
-                                                <button className="btn btn-link" onClick={ () => this.showChannelsLinkFrom(user.id) }><i className="material-icons" title="прикрепить телеканалы">settings_applications</i></button>
+                                                <button className="btn btn-link" onClick={ () => this.confirmUser(user.id, index) } title="Activate"><i className="material-icons">check</i></button>
+                                                <button className="btn btn-link" onClick={ () => this.unconfirmUser(user.id, index) } title="Disable"><i className="material-icons">power_settings_new</i></button>
+                                                <button className="btn btn-link" onClick={ () => this.showChannelsLinkFrom(user.id) }><i className="material-icons" title="Attach tv channels">settings_applications</i></button>
                                             </div>
                                         </td>
                                     </tr>
